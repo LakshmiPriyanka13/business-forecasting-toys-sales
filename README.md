@@ -10,7 +10,7 @@ The objective of this project is to develop a robust, end-to-end Time Series For
 * Improve supply chain efficiency to prevent stockouts during peak demand.
 * Guide long-term strategic business planning.
 
-## 📊 Data Description
+## Data Description
 
 The dataset consists of historical monthly toy sales spanning 19 years.
 
@@ -24,7 +24,7 @@ The dataset consists of historical monthly toy sales spanning 19 years.
 
 
 
-## 🛠️ Methodology
+## Methodology
 
 1. **Exploratory Data Analysis (EDA):** Analyzed the data for long-term trends and seasonal variations using boxplots and yearly overlay charts.
 2. **Time Series Decomposition:** Applied a multiplicative decomposition model to isolate the trend, seasonal, and residual components.
@@ -32,7 +32,7 @@ The dataset consists of historical monthly toy sales spanning 19 years.
 4. **Parameter Selection:** Utilized Autocorrelation (ACF) and Partial Autocorrelation (PACF) plots to determine optimal lags.
 5. **Model Training & Evaluation:** Split the data into a training set (2006–2023) and a holdout test set (2024).
 
-## 🤖 Models Implemented
+## Models Implemented
 
 The following models were built and compared against the 2024 test data:
 
@@ -40,7 +40,7 @@ The following models were built and compared against the 2024 test data:
 * **SARIMA** (Seasonal ARIMA) - explicitly modeled to handle the 12-month seasonality.
 * **Holt-Winters Exponential Smoothing** (Multiplicative Model).
 
-## 🏆 Results & Final Model Selection
+## Results & Final Model Selection
 
 The models were evaluated based on Root Mean Squared Error (RMSE) and Mean Absolute Percentage Error (MAPE).
 
@@ -52,7 +52,7 @@ The models were evaluated based on Root Mean Squared Error (RMSE) and Mean Absol
 
 **Conclusion:** The **SARIMA** model was selected as the final production model. It successfully captured both the underlying trend and the complex monthly seasonality, achieving the lowest error rates (MAPE of 4.64%) on unseen test data.
 
-## 📁 Repository Structure
+## Repository Structure
 
 * `Business_Forecasting_Toys_Sales_Forecasting.ipynb`: The core Jupyter Notebook containing all Python code for EDA, statistical testing, model building, and evaluation.
 * `Toys Sales.xlsx`: The raw dataset containing the `Date` and `Toys Sales` columns.
